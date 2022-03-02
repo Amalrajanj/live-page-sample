@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Live.css" />
+    <title>Live</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <div class="video">
+          <video
+            autoplay
+            onclick="videoHandle()"
+            class="videocontent"
+            src="https://arvanloud.io/dl_11852474/Our_Gaming_and_Live_Streaming_Setup__csYP54xZupI_247.mkv"
+          ></video>
+          <div class="status">
+            <div class="live">
+              <span></span>
+              <p>Live</p>
+            </div>
+            <div class="viewers">
+              <img src="./Icons/user.svg" alt="" />
+              <p>26K</p>
+            </div>
+          </div>
+        </div>
+        <div class="videoinfo">
+          <h4 class="caption">Our Gaming and Live Streaming new Setup! 🎉</h4>
+          <div class="actions">
+            <div onclick="handleComment()" class="commenticon">
+              <img src="./Icons/comment.svg" alt="" />
+            </div>
+            <div class="share"><img src="./Icons/share.svg" alt="" /></div>
+            <div class="like"><img src="./Icons/like.svg" alt="" /></div>
+            <button class="subscribe">
+              <img src="./Icons/Star.svg" alt="" />Subscribe
+            </button>
+          </div>
+        </div>
+        <div class="commentView" title="comments"></div>
+
+        <!-- Channels navigation -->
+        <div class="channels">
+          <div class="tag">
+            <h5>Recommended for you</h5>
+            <img src="./Icons/infinity.svg" alt="" />
+          </div>
+          <div class="channel">
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Techno news</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Travel vlogs</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Game Arena</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/6207010/pexels-photo-6207010.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>NDTV</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Entertainment</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Art vector</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="channels">
+          <div class="tag">
+            <h5>Trending live channels</h5>
+            <img src="./Icons/infinity.svg" alt="" />
+          </div>
+          <div class="channel">
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Art vector</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Entertainment</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/6207010/pexels-photo-6207010.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>NDTV</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/3568520/pexels-photo-3568520.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Techno news</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/3155666/pexels-photo-3155666.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Travel vlogs</p>
+              </div>
+            </div>
+            <div class="channel-item">
+              <div class="thumbnail">
+                <img
+                  src="https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                  alt=""
+                />
+                <p>Game Arena</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Comment section -->
+      <div class="comments">
+        <div class="info">
+          <div onclick="handleComment()" class="closebtn"></div>
+          <p class="channel-welcome">Welcome to Game news</p>
+        </div>
+
+        <div class="comment">
+          <div class="comment-item">
+            <div class="profile-avatar">
+              <img
+                src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""
+              />
+            </div>
+            <div class="chat">
+              <p class="username">Yelena bolenovasss</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yeleaaaaaaaana bolenova</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Whyaaaaaaaaaa is that?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar"></div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Why is tgsssssssssshat?</p>
+            </div>
+          </div>
+          <div class="comment-item">
+            <div class="profile-avatar">
+              <img
+                src="https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+                alt=""
+              />
+            </div>
+            <div class="chat">
+              <p class="username">Yelena bolenova</p>
+              <p>Why is that?</p>
+            </div>
+          </div>
+        </div>
+        <div class="comment-input">
+          <input type="text" placeholder="comment now" />
+          <img src="./Icons//Send.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./Live.js"></script>
+</html>
