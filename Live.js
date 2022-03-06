@@ -5,6 +5,7 @@ let comments = document.querySelector('.comments')
 let comment = document.querySelector('.comment')
 let channels = document.querySelectorAll('.channels')
 let article = document.querySelector('.article')
+let commentInput = document.querySelector('.comment-input')
  
 
 // channels.forEach((c)=>{
@@ -29,10 +30,13 @@ let handleArticle = ()=>{
     if(!articleStatus){
         comment.style.display = 'none'
         article.style.display = 'flex'
+        commentInput.style.display = 'none'
         articleStatus = true
     }else{
         comment.style.display = 'flex'
         article.style.display = 'none'
+        commentInput.style.display = 'flex'
+
         articleStatus = false
     }
 }
